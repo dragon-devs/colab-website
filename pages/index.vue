@@ -3,13 +3,10 @@
     <h1 class="text-3xl font-bold underline text-slate-500">
       Nuxt Colab Website! Testing + Changing again
     </h1>
+    <p>Something added by SK-DRH</p>
   </div>
 </template>
 
-<script setup>
+<script setup></script>
 
-</script>
-
-<style scoped>
-
-</style>
+<style scoped></style>
