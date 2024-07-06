@@ -9,6 +9,8 @@
     <p>Testing next line</p>
     <p>everything goes away there sk drh</p>
 
+    <div>I'm adding this new line from the drh</div>
+
   </div>
 </template>
 
