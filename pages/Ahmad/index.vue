@@ -1,8 +1,8 @@
 <template>
-  <header class="flex justify-between items-center bg-white">
+  <header class="flex justify-between items-center bg-whit font-serif">
       <div class="logo">logo</div>
-      <nav>
-          <div class="flex space-x-6">
+      <nav class="flex-grow">
+          <div class="flex justify-center space-x-6">
               <button>Case Studies</button>
               <button>Services</button>
               <button>About</button>
@@ -12,7 +12,7 @@
           </div>
       </nav>
       <div>
-          <button>
+          <button class="flex justify-between items-center pl-6 p-6 w-72 text-white bg-cyan-400 hover:bg-cyan-950 duration-500">
             <span>Schedule Strategy Call</span>
             <span>icon</span>
           </button>
