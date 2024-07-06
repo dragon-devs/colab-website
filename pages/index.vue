@@ -6,6 +6,7 @@
     <p>Something added by SK-DRH</p>
     <p>Adding new line to main branch skdrh</p>
     <p>testing new line.</p>
+    <p>directly to the main branch</p>
   </div>
 </template>
 
