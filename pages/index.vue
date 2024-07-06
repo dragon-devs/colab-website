@@ -9,7 +9,6 @@
     <p>Testing next line</p>
     <p>everything goes away there sk drh</p>
   </div>
-</template>
 
 <script setup></script>
 
