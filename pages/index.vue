@@ -3,8 +3,8 @@
     <h1 class="text-3xl font-bold underline text-slate-500">
       Nuxt Colab Website! Testing +
     </h1>
+    <p>something</p>
   </div>
-</template>
 
 <script setup>
 
