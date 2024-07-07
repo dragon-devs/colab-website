@@ -32,7 +32,7 @@
 
 <style scoped>
 .topbardesign {
-  @apply max-w-full bg-rose-400 font-bold text-white font-sans;
+  @apply max-w-full bg-rose-400 font-bold text-white font-sans shadow-lg;
 }
 
 .rightside {
