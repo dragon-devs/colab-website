@@ -6,6 +6,7 @@
         <li>Home</li>
         <li>Contact</li>
         <li>About</li>
+        <li>New</li>
       </ul>
       <span class="btn">Login</span>
     </nav>
