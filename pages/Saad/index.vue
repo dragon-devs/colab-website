@@ -14,7 +14,7 @@
         <button>Contact</button>
       </div>
     </header>
-    <section class="flex flex-col-2">
+    <section class="grid grid-cols-2">
       <div class="leftside bg-slate-400">
         <ul>
           <li class="w-auto font-extrabold">Programming, redefined.</li>
@@ -27,7 +27,7 @@
       </div>
       <div class="rightside">
         <img
-          class="size-3/4"
+          class="object-cover"
           src="~/assets/images/hero.jpg"
           alt="Discover One Big Soft"
         />
