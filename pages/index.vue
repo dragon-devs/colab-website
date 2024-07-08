@@ -11,6 +11,7 @@
 
     <div>I'm adding this new line from the drh</div>
 
+    <div> new changes</div>
   </div>
 </template>
 
