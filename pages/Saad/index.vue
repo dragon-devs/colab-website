@@ -14,15 +14,23 @@
         <button>Contact</button>
       </div>
     </header>
-    <section class="flex flex-wrap justify-between">
-      <div class="leftside flex-auto">
+    <section class="flex flex-col-2">
+      <div class="leftside bg-slate-400">
         <ul>
-          <li>Hi My name is Saad</li>
-          <li>I am a programmer</li>
+          <li class="w-auto font-extrabold">Programming, redefined.</li>
+          <li class="w-auto">
+            Discover the power of a professional team and how it enables you to
+            build your dreams, without limitations.
+          </li>
+          <button>Schedule a Strategy Call</button>
         </ul>
       </div>
-      <div class="rightside flex-auto">
-        <div>There will be an image here</div>
+      <div class="rightside">
+        <img
+          class="size-3/4"
+          src="~/assets/images/hero.jpg"
+          alt="Discover One Big Soft"
+        />
       </div>
     </section>
   </div>
