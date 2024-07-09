@@ -1,49 +1,49 @@
 <template>
   <div class="mx-[16%]">
-    <header class="topbardesign grid grid-cols-6 p-4">
-      <div class="leftside">
-        <button>Home</button>
-      </div>
-      <div class="centerside">
+    <nav
+      class="max-w-full bg-rose-400 text-white font-bold font-sans shadow-lg p-4 flex justify-between"
+    >
+      <button class="text-lg">Home</button>
+      <div class="flex gap-8 text-lg">
         <button>About</button>
         <button>Case Studies</button>
         <button>Team</button>
         <button>Jobs</button>
       </div>
-      <div class="rightside">
-        <button>Contact</button>
-      </div>
-    </header>
-    <section class="flex flex-wrap justify-between">
-      <div class="leftside flex-auto">
+      <button class="button text-lg">Contact</button>
+    </nav>
+    <hero class="grid grid-cols-2">
+      <div class="bg-gradient-to-t from-white to-rose-100 p-6 pt-48">
         <ul>
-          <li>Hi My name is Saad</li>
-          <li>I am a programmer</li>
+          <li class="text-5xl font-extrabold font-sans">
+            Programming, redefined.
+          </li>
+          <li class="text-lg mt-4 mb-4 font-sans">
+            Discover the power of a professional team and how it enables you to
+            build your dreams, without limitations.
+          </li>
+          <button class="button">Schedule a Strategy Call</button>
         </ul>
       </div>
-      <div class="rightside flex-auto">
-        <div>There will be an image here</div>
-      </div>
-    </section>
+      <img
+        class="object-cover bg-rose-100 bg-gradient-to-tr"
+        src="~/assets/images/hero.jpg"
+        alt="Discover One Big Soft"
+      />
+    </hero>
+    <about
+      class="grid grid-cols-2 bg-gradient-to-t from-rose-100 to-white h-80"
+    >
+      <div></div>
+      <div></div>
+    </about>
   </div>
 </template>
 
 <script setup lang="ts"></script>
 
 <style scoped>
-.topbardesign {
-  @apply max-w-full bg-rose-400 font-bold text-white font-sans shadow-lg;
-}
-
-.rightside {
-  @apply flex col-span-1 justify-end;
-}
-
-.centerside {
-  @apply flex col-span-4 justify-center gap-8;
-}
-
-.leftside {
-  @apply flex col-span-1 justify-start;
+.button {
+  @apply rounded-lg p-2 text-lg text-slate-100 border-2 border-rose-600 bg-rose-500 hover:bg-blue-400 hover:border-blue-500 duration-300 font-sans font-semibold text-center items-center;
 }
 </style>
