@@ -1,8 +1,6 @@
 <template>
-  <div class="mx-[16%]">
-    <nav
-      class="max-w-full bg-rose-400 text-white font-bold font-sans shadow-lg p-4 flex justify-between"
-    >
+  <div class=" mx-[16%]">
+    <div class="nav">
       <button class="text-lg">Home</button>
       <div class="flex gap-8 text-lg">
         <button>About</button>
@@ -11,9 +9,9 @@
         <button>Jobs</button>
       </div>
       <button class="button text-lg">Contact</button>
-    </nav>
-    <hero class="grid grid-cols-2">
-      <div class="bg-gradient-to-t from-white to-rose-100 p-6 pt-48">
+    </div>
+    <div class="hero">
+      <div class="bg-gradient-to-t from-white to-rose-100 p-6 pt-32">
         <ul>
           <li class="text-5xl font-extrabold font-sans">
             Programming, redefined.
@@ -25,25 +23,48 @@
           <button class="button">Schedule a Strategy Call</button>
         </ul>
       </div>
-      <img
-        class="object-cover bg-rose-100 bg-gradient-to-tr"
-        src="~/assets/images/hero.jpg"
-        alt="Discover One Big Soft"
-      />
-    </hero>
-    <about
-      class="grid grid-cols-2 bg-gradient-to-t from-rose-100 to-white h-80"
-    >
-      <div></div>
-      <div></div>
-    </about>
+      <span class=" w-full h-full bg-rose-100 bg-gradient-to-tr">
+          <img
+              class="object-cover w-full h-full"
+            src="~/assets/images/hero.jpg"
+            alt="Discover One Big Soft"
+          />
+      </span>
+
+    </div>
+    <div class="about flex flex-col justify-center items-center">
+      <div
+        class="font-sans text-4xl font-extrabold mt-24 mb-4"
+      >
+        Where all dreams come into place.
+      </div>
+      <div class="text-center">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore modi
+        totam nihil repellendus iste corrupti odio ratione. Accusantium, vel
+        illum a laboriosam esse quasi sit, fugit magni quia minima perspiciatis.
+      </div>
+      <button class="button my-4 w-32">Book Now</button>
+    </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+</script>
 
 <style scoped>
+.nav {
+  @apply max-w-full bg-rose-400 text-white font-bold font-sans shadow-lg p-4 flex justify-between;
+}
+
+.hero {
+  @apply grid grid-cols-2;
+}
+
+.about {
+  @apply bg-gradient-to-t from-rose-100 to-white;
+}
+
 .button {
-  @apply rounded-lg p-2 text-lg text-slate-100 border-2 border-rose-600 bg-rose-500 hover:bg-blue-400 hover:border-blue-500 duration-300 font-sans font-semibold text-center items-center;
+  @apply rounded-lg p-2 text-lg text-slate-100 border-2 border-rose-600 bg-rose-500 hover:bg-blue-400 hover:border-blue-500 duration-300 font-sans font-semibold text-center ;
 }
 </style>
