@@ -14,6 +14,7 @@
         <p class="text-white text-opacity-80">{{ link.description }}</p>
       </div>
     </NuxtLink>
+
   </div>
 </template>
 
