@@ -1,4 +1,5 @@
 <template>
+
   <div>
     <header class="flex justify-between items-center bg-white font-inter font-medium text-sm h-[74px]">
       <img src="@/assets/css/logo.png" alt="Company logo" class="h-20 ml-12" />
@@ -89,5 +90,6 @@
 <script setup>
 import Image from '@/assets/css/background.png'
 </script>
+
 
 <style></style>
