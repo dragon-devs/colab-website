@@ -1,4 +1,5 @@
 <template>
+
   <div class="mx-[16%]">
     <header
       class="max-w-full bg-rose-400 text-white font-bold font-sans shadow-lg p-4 flex justify-between"
@@ -14,6 +15,7 @@
     </header>
     <div class="grid grid-cols-2 bg-gradient-to-t from-white to-rose-100">
       <div class="px-8 pt-32">
+
         <ul>
           <li class="text-5xl font-extrabold font-sans">
             Programming, redefined.
@@ -25,6 +27,7 @@
           <button class="button">Schedule a Strategy Call</button>
         </ul>
       </div>
+
       <img
         class="object-cover"
         src="~/assets/images/hero.jpg"
@@ -85,9 +88,11 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+</script>
 
 <style scoped>
+
 .button {
   @apply rounded-lg p-2 text-lg text-slate-100 border-2 border-rose-600 bg-rose-500 hover:bg-blue-400 hover:border-blue-500 duration-300 font-sans font-semibold text-center items-center;
 }

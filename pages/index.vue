@@ -1,20 +1,42 @@
 <template>
-  <div class="flex justify-center item-center p-4">
-    <h1 class="text-3xl font-bold underline text-slate-500">
-      Nuxt Colab Website! Testing + Changing again
-    </h1>
-    <p>Something added by SK-DRH</p>
-    <p>Adding new line to main branch skdrh</p>
-    <p>testing new line.</p>
-    <p>Testing next line</p>
-    <p>everything goes away there sk drh</p>
+  <div class="grid sm:mx-[25%] grid-cols-1 gap-6 p-6">
+    <NuxtLink
+      v-for="(link, index) in links"
+      :key="index"
+      :to="link.route"
+      class="card-link group"
+    >
+      <div
+        class="rounded-lg p-6 transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg"
+        :class="gradientClasses[index % gradientClasses.length]"
+      >
+        <h3 class="text-xl font-bold text-white mb-2">{{ link.title }}</h3>
+        <p class="text-white text-opacity-80">{{ link.description }}</p>
+      </div>
+    </NuxtLink>
 
-    <div>I'm adding this new line from the drh</div>
-
-    <div> new changes</div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const links = [
+  { title: 'Home', description: 'Go to the homepage', route: '/' },
+  { title: 'DRH', description: 'Testing pages', route: '/drh' },
+  { title: 'Saad', description: 'Saad Portfolio Site', route: '/Saad' },
+  { title: 'Ahmad', description: 'Devsinc Business Website Clone', route: '/Ahmad' },
+];
 
-<style scoped></style>
+const gradientClasses = [
+  'bg-gradient-to-br from-purple-600 to-blue-500',
+  'bg-gradient-to-br from-green-400 to-blue-500',
+  'bg-gradient-to-br from-indigo-500 to-purple-500',
+  'bg-gradient-to-br from-pink-500 to-orange-400',
+  'bg-gradient-to-br from-yellow-400 to-red-500',
+];
+</script>
+
+<style scoped>
+.card-link {
+  text-decoration: none;
+}
+</style>
