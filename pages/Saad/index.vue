@@ -10,8 +10,8 @@
       </div>
       <button class="button text-lg">Contact</button>
     </div>
-    <div class="hero">
-      <div class="bg-gradient-to-t from-white to-rose-100 p-6 pt-32">
+    <div class="hero bg-gradient-to-t from-white to-rose-100">
+      <div class="px-8 pt-32">
         <ul>
           <li class="text-5xl font-extrabold font-sans">
             Programming, redefined.
@@ -24,14 +24,14 @@
         </ul>
       </div>
       <img
-        class="object-cover bg-rose-100 bg-gradient-to-tr"
+        class="object-cover"
         src="~/assets/images/hero.jpg"
         alt="Discover One Big Soft"
       />
     </div>
-    <div class="about">
+    <div class="about flex flex-col justify-center items-center">
       <div
-        class="flex justify-center font-sans text-4xl font-extrabold mt-24 mb-4"
+        class="flex justify-center font-sans text-4xl font-extrabold mt-48 mb-4"
       >
         Where all dreams come into place.
       </div>
@@ -40,7 +40,24 @@
         totam nihil repellendus iste corrupti odio ratione. Accusantium, vel
         illum a laboriosam esse quasi sit, fugit magni quia minima perspiciatis.
       </div>
-      <button class="button my-4 ml-96 w-32">Book Now</button>
+      <button class="button my-4 w-32 flex justify-center mb-48">
+        Book Now
+      </button>
+    </div>
+    <div class="grid grid-cols-2 bg-gradient-to-t from-white to-rose-100">
+      <img src="~/assets/images/hero.jpg" alt="Project Case Studies" />
+      <div>
+        <div class="mt-32 px-8 font-extrabold text-4xl">
+          View Our Project Gallery
+        </div>
+        <div class="px-8 mt-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+          repellat aliquid dignissimos reprehenderit nulla nostrum accusamus
+          quae ex obcaecati veritatis totam, voluptate incidunt adipisci
+          doloribus nam suscipit quis, quia magni?
+        </div>
+        <button class="button mt-4 mx-8">View Gallery</button>
+      </div>
     </div>
   </div>
 </template>
