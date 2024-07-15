@@ -73,6 +73,17 @@
         </div>
       </div>
     </section>
+    <section class="flex justify-center">
+      <div
+        class="bg-slate-900 w-full h-72 m-14 flex justify-around p-8 items-center flex-col-2 rounded-xl"
+      >
+        <div class="text-white font-sans text-3xl">
+          A Free Audit Never Hurt Anyone.<br />
+          <div class="text-xl mt-2">It has only ever helped.</div>
+        </div>
+        <button class="button">Call Now</button>
+      </div>
+    </section>
     <footer
       class="grid grid-cols-3 gap-8 h-80 w-full bg-slate-900 text-white p-20"
     >
