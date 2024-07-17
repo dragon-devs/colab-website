@@ -73,7 +73,31 @@
         </div>
       </div>
     </section>
-    <section class="flex justify-center">
+    <section>
+      <div>
+        <div
+          class="bg-gradient-to-t from-rose-100 to-white flex flex-col justify-center items-center"
+        >
+          <div
+            class="flex justify-center font-sans text-4xl font-extrabold mt-48 mb-4"
+          >
+            Meet Our Team
+          </div>
+          <div class="flex justify-center mx-[8%]">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
+            modi totam nihil repellendus iste corrupti odio ratione.
+            Accusantium, vel illum a laboriosam esse quasi sit, fugit magni quia
+            minima perspiciatis.
+          </div>
+          <button class="button my-4 w-32 flex justify-center mb-48">
+            View Team
+          </button>
+        </div>
+      </div>
+    </section>
+    <section
+      class="flex justify-center bg-gradient-to-b from-rose-100 to-white"
+    >
       <div
         class="bg-slate-900 w-full h-72 m-14 flex justify-around p-8 items-center flex-col-2 rounded-xl"
       >
@@ -81,7 +105,34 @@
           A Free Audit Never Hurt Anyone.<br />
           <div class="text-xl mt-2">It has only ever helped.</div>
         </div>
-        <button class="button">Call Now</button>
+        <button class="button w-24">Call Now</button>
+      </div>
+    </section>
+    <section>
+      <div class="bg-slate-900 rounded-xl text-white m-14 p-8">
+        <p class="text-3xl text-center font-extrabold">Contact Us</p>
+        <div>
+          Name
+          <input
+            type="text"
+            placeholder="Enter your name"
+            class="w-full rounded-md h-10 p-2 text-black my-2"
+          />
+          Email
+          <input
+            type="text"
+            placeholder="Enter your Email Address"
+            class="w-full rounded-md h-10 p-2 text-black my-2"
+          />
+          Your Question
+          <textarea
+            placeholder="Enter your Query"
+            class="w-full rounded-md h-36 p-2 text-black my-2 wordbreak:normal break-words overflow-y-hidden"
+          ></textarea>
+        </div>
+        <div class="flex justify-center items-center mt-4">
+          <button class="button w-24">Submit</button>
+        </div>
       </div>
     </section>
     <footer
