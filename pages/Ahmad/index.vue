@@ -1,7 +1,10 @@
 <template>
+
   <div class="bg-white">
     <header class="flex justify-between items-center bg-white font-inter h-[92px]">
-      <img src="@/assets/css/logo.png" alt="Company logo" class="h-20 ml-12" />
+
+
+ <img src="@/assets/css/logo.png" alt="Company logo" class="h-20 ml-12" />
       <nav class="flex-grow">
         <div class="flex justify-center -pl-[293px] space-x-[39px] text-black text-lg">
           <button class="hover:text-[#0ebab1] duration-500">Case Studies</button>
@@ -448,6 +451,7 @@ onMounted(() => {
   }
 })
 </script>
+
 
 <style>
 @keyframes scroll {
