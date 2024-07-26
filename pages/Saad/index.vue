@@ -11,7 +11,9 @@
           <button class="hover_text">Team</button>
           <button class="hover_text">Jobs</button>
         </div>
-        <button class="button text-lg">Contact</button>
+        <button class="button text-lg" @click="scrollToSection('contact-us')">
+          Contact Us
+        </button>
       </nav>
     </header>
     <section>
@@ -25,7 +27,9 @@
               Discover the power of a professional team and how it enables you
               to build your dreams, without limitations.
             </li>
-            <button class="button">Schedule a Strategy Call</button>
+            <button class="button" @click="scrollToSection('call-us')">
+              Schedule a Strategy Call
+            </button>
           </ul>
         </div>
 
@@ -97,6 +101,7 @@
     </section>
     <section
       class="flex justify-center bg-gradient-to-b from-rose-100 to-white"
+      id="call-us"
     >
       <div
         class="bg-slate-900 w-full h-72 m-14 flex justify-around p-8 items-center flex-col-2 rounded-xl"
@@ -108,7 +113,7 @@
         <button class="button w-24">Call Now</button>
       </div>
     </section>
-    <section>
+    <section id="contact-us">
       <div class="bg-slate-900 rounded-xl text-white m-14 p-8">
         <p class="text-3xl text-center font-extrabold">Contact Us</p>
         <div>
@@ -131,7 +136,7 @@
           ></textarea>
         </div>
         <div class="flex justify-center items-center mt-4">
-          <button class="button w-24">Submit</button>
+          <button class="button w-24" @click="buttonClick">Submit</button>
         </div>
       </div>
     </section>
@@ -139,7 +144,9 @@
       class="grid grid-cols-3 gap-8 h-80 w-full bg-slate-900 text-white p-20"
     >
       <div>
-        <div class="font-bold text-xl mb-4">Company Logo</div>
+        <div class="font-bold text-xl mb-4 cursor-pointer" @click="buttonClick">
+          Company Logo
+        </div>
         <div>
           OBS is Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
           dolore illo eaque commodi ad quaerat cupiditate modi quis eveniet.
@@ -147,25 +154,36 @@
       </div>
       <ul>
         <li class="font-bold text-xl mb-4">Visit</li>
-        <div class="hover_footer">About Us</div>
-        <div class="hover_footer">Case Studies</div>
-        <div class="hover_footer">Portfolio</div>
-        <div class="hover_footer">Testimonials</div>
-        <div class="hover_footer">Team</div>
+        <li class="hover_footer" @click="buttonClick">About Us</li>
+        <li class="hover_footer" @click="buttonClick">Case Studies</li>
+        <li class="hover_footer" @click="buttonClick">Portfolio</li>
+        <li class="hover_footer" @click="buttonClick">Testimonials</li>
+        <li class="hover_footer" @click="buttonClick">Team</li>
       </ul>
       <ul>
         <li class="font-bold text-xl mb-4">Socials</li>
-        <div class="hover_footer">Facebook</div>
-        <div class="hover_footer">LinkedIn</div>
-        <div class="hover_footer">Instagram</div>
-        <div class="hover_footer">Twitter</div>
-        <div class="hover_footer">YouTube</div>
+        <li class="hover_footer" @click="buttonClick">Facebook</li>
+        <li class="hover_footer" @click="buttonClick">LinkedIn</li>
+        <li class="hover_footer" @click="buttonClick">Instagram</li>
+        <li class="hover_footer" @click="buttonClick">Twitter</li>
+        <li class="hover_footer" @click="buttonClick">YouTube</li>
       </ul>
     </footer>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const buttonClick = () => {
+  alert("clicked");
+};
+
+const scrollToSection = (sectionId: string) => {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
+</script>
 
 <style scoped>
 .button {
