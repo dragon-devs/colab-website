@@ -73,7 +73,9 @@
             quae ex obcaecati veritatis totam, voluptate incidunt adipisci
             doloribus nam suscipit quis, quia magni?
           </div>
-          <button class="button mt-4 mx-8">View Gallery</button>
+          <ScrollToSection target="contact-us" class="button mt-4 mx-8">
+            View Gallery
+          </ScrollToSection>
         </div>
       </div>
     </section>
@@ -93,9 +95,9 @@
             Accusantium, vel illum a laboriosam esse quasi sit, fugit magni quia
             minima perspiciatis.
           </div>
-          <button class="button my-4 w-32 flex justify-center mb-48">
+          <div class="button my-4 w-32 flex justify-center mb-48">
             View Team
-          </button>
+          </div>
         </div>
       </div>
     </section>
@@ -173,6 +175,8 @@
 </template>
 
 <script setup lang="ts">
+import ScrollToSection from "~/components/ScrollToSection.vue";
+
 const buttonClick = () => {
   alert("clicked");
 };
