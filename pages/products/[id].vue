@@ -15,10 +15,6 @@ if (!product.value) {
     statusMessage: "Product not found",
   });
 }
-
-definePageMeta({
-  layout: "saad",
-});
 </script>
 
 <style scoped></style>

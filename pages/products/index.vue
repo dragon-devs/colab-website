@@ -8,10 +8,6 @@
 
 <script setup>
 const { data: products } = await useFetch("https://fakestoreapi.com/products");
-
-definePageMeta({
-  layout: "saad",
-});
 </script>
 
 <style scoped></style>

@@ -170,12 +170,6 @@
 </template>
 
 <script setup lang="ts">
-definePageMeta({
-  layout: "saad",
-});
-
-import ScrollToSection from "~/components/ScrollToSection.vue";
-
 const buttonClick = () => {
   alert("clicked");
 };
